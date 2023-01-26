@@ -382,26 +382,29 @@ section {
   content: "";
   position: absolute;
   display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
+  width: 160px;
+  height: 2px;
+  background: rgb(56, 52, 52);
   bottom: 1px;
-  left: calc(50% - 60px);
+  left: calc(50% - 80px);
 }
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 40px;
-  height: 3px;
+  width: 120px;
+  height: 2px;
   background: #0563bb;
   bottom: 0;
-  left: calc(50% - 20px);
+  left: calc(50% - 60px);
 }
 
 .section-title p {
   margin-bottom: 0;
+  position: absolute;
+  /* color: rgb(26, 25, 25); dark ash color */
+  /* font-style: italic; */
 }
 
 /*--------------------------------------------------------------
