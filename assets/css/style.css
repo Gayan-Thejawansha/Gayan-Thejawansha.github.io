@@ -401,7 +401,7 @@ section {
 }
 
 .section-title p {
-  margin-bottom: 0;
+  margin-bottom: 20px;
   /* position: absolute; */
   /* color: rgb(26, 25, 25); dark ash color */
   /* font-style: italic; */
