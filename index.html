@@ -332,7 +332,8 @@
               <h5>Nov, 2014 - Feb, 2019</h5>
               <p><em>Specialized in Computer Engineering</em></p>
               <p>Faculty of Engineering, University of Peradeniya - Sri Lanka</p>
-              <a href="https://www.pdn.ac.lk/"> <img src="assets/img/UOP.png" class="img-fluid" alt="" width="500" height="125"></a>
+              <a href="https://www.pdn.ac.lk/"> <img src="assets/img/UOP.png" class="img-fluid" alt="" width="500"
+                  height="125"></a>
             </div>
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
@@ -644,28 +645,32 @@
           </div>
 
           <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form role="form" action="javascript:void(0);" class="php-email-form">
+            
+            <form role="form" action="javascript:void(0);" class="php-email-form" > <!-- action="javascript:void(0);" -->
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="sender_name" class="form-control" id="sender_name" placeholder="Your Name" required>
+                  <input type="text" name="sender_name" class="form-control" id="sender_name" placeholder="Your Name"
+                    required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="sender_email" id="sender_email" placeholder="Your Email" required>
+                  <input type="email" class="form-control" name="sender_email" id="sender_email"
+                    placeholder="Your Email" required>
                 </div>
               </div>
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" value="Submit" onclick="sendEmail()">Send Message</button></div>
+              <!-- <div class="text-center"><button type="submit" value="Submit" id="sendEmailButton">Send Message</button> -->
+                <div class="text-center"><button type="submit" value="Submit" onclick="sendEmail()">Send Message</button>
+              </div>
             </form>
 
           </div>
@@ -681,7 +686,8 @@
   <footer id="footer">
     <div class="container">
       <h3>Gayan Shanaka Thejawansha</h3>
-      <p>"All great things are simple, and many can be expressed in single words: freedom, justice, honor, duty, mercy, hope……" <small>-Winston Churchill</small></p>
+      <p>"All great things are simple, and many can be expressed in single words: freedom, justice, honor, duty, mercy,
+        hope……" <small>-Winston Churchill</small></p>
       <div class="social-links">
         <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
         <a href="https://www.linkedin.com/in/gayan-thejawansha/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
@@ -694,11 +700,11 @@
         Copyright &copy; Gayan Shanaka Thejawansha-2023. All rights reserved.
       </div>
       <!-- <div class="credits"> -->
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: [license-url] -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+      <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> -->
       <!-- </div> -->
     </div>
   </footer><!-- End Footer -->
@@ -720,9 +726,19 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="assets/js/emailSender.js"></script>
-  <script src="https://apis.google.com/js/api.js"></script> 
 
+  <!-- <script src="https://apis.google.com/js/api.js"></script> 
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+  <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+  <div id="g_id_onload"
+       data-client_id="927885911599-a8j0kvlam9sdva0crbpii34m5v034gkr.apps.googleusercontent.com"
+       data-callback="handleCredentialResponse">
+  </div>
+  <div class="g_id_signin" data-type="standard"></div> -->
 </body>
 
 </html>
