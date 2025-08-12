@@ -14,6 +14,18 @@
     }
   }
 
+  const birthDate = new Date(1994, 0, 3); // Month is 0-based (0 = Jan)
+    const today = new Date();
+    let age = today.getFullYear() - birthDate.getFullYear();
+
+    // Check if birthday hasn't happened yet this year
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    document.getElementById("age").textContent = age;
+
   /**
    * Easy event listener function
    */
@@ -140,8 +152,8 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
+      typeSpeed: 50,
+      backSpeed: 25,
       backDelay: 2000
     });
   }
