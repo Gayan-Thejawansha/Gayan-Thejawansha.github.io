@@ -1,0 +1,91 @@
+{
+    "version": "15.1.4",
+    "vulnerabilities": [
+        {
+            "id": "8f8dd8478b4a885d5335e48a59c85d55bd026eea3aeb0004680be2702420856c",
+            "category": "sast",
+            "name": "Allocation of resources without limits or throttling",
+            "description": "The application was found using the `requests` module without configuring a timeout value for\nconnections. This could lead to uncontrolled resource consumption where the application could\nrun out of\nsocket descriptors, effectively causing a Denial of Service (DoS).\n\nTo remediate this issue, pass in a `timeout=` argument to each `requests` call.\n\nExample using a timeout for an HTTP GET request:\n```\n# Issue a GET request to https://example.com with a timeout of 10 seconds\nresponse = requests.get('https://example.com', timeout=10)\n# Work with the response object\n# ...\n```\n\nFor more information on using the requests module see:\n- https://requests.readthedocs.io/en/latest/api/\n",
+            "cve": "semgrep_id:bandit.B113:61:61",
+            "severity": "Medium",
+            "scanner": {
+                "id": "semgrep",
+                "name": "Semgrep"
+            },
+            "location": {
+                "file": "delupe_api/views.py",
+                "start_line": 61
+            },
+            "identifiers": [
+                {
+                    "type": "semgrep_id",
+                    "name": "bandit.B113",
+                    "value": "bandit.B113",
+                    "url": "https://semgrep.dev/r/gitlab.bandit.B113"
+                },
+                {
+                    "type": "cwe",
+                    "name": "CWE-770",
+                    "value": "770",
+                    "url": "https://cwe.mitre.org/data/definitions/770.html"
+                },
+                {
+                    "type": "owasp",
+                    "name": "A05:2021 - Security Misconfiguration",
+                    "value": "A05:2021"
+                },
+                {
+                    "type": "owasp",
+                    "name": "A6:2017 - Security Misconfiguration",
+                    "value": "A6:2017"
+                },
+                {
+                    "type": "bandit_test_id",
+                    "name": "Bandit Test ID B113",
+                    "value": "B113"
+                }
+            ]
+        }
+    ],
+    "scan": {
+        "analyzer": {
+            "id": "semgrep",
+            "name": "Semgrep",
+            "url": "https://gitlab.com/gitlab-org/security-products/analyzers/semgrep",
+            "vendor": {
+                "name": "GitLab"
+            },
+            "version": "6.6.0"
+        },
+        "scanner": {
+            "id": "semgrep",
+            "name": "Semgrep",
+            "url": "https://github.com/returntocorp/semgrep",
+            "vendor": {
+                "name": "GitLab"
+            },
+            "version": "1.118.0"
+        },
+        "type": "sast",
+        "start_time": "2025-08-26T06:25:16",
+        "end_time": "2025-08-26T06:25:27",
+        "status": "success",
+        "observability": {
+            "events": [
+                {
+                    "event": "collect_sast_scan_metrics_from_pipeline",
+                    "property": "d689999d-5402-46ec-a587-7b540e429703",
+                    "label": "semgrep",
+                    "value": 0,
+                    "version": "6.6.0",
+                    "exit_code": 0,
+                    "override_count": 0,
+                    "passthrough_count": 0,
+                    "custom_exclude_path_count": 0,
+                    "time_s": 10,
+                    "file_count": 21
+                }
+            ]
+        }
+    }
+}
