@@ -1,0 +1,91 @@
+{
+  "name": "Gayan Shanaka Thejawansha",
+  "title": "Lead Software Engineer & Information Security Manager",
+  "contact": {
+    "email": "gthejawansha2@gmail.com",
+    "phone": "+971 (58) 567 2580",
+    "location": "Dubai, UAE",
+    "portfolio": "https://gayan-thejawansha.github.io/"
+  },
+  "summary": "Hard-working, fast learner, and proven Software Engineer with a 4-year Computer Engineering degree and 3+ years of work experience. Dedicated problem solver skilled in Java, PHP, Python, and Cloud Security. Expert in building scalable e-commerce platforms and managing ISO-compliant information security systems.",
+  "skills": [
+    "Java", "PHP", "Python", "JavaScript", "HTML/CSS", "MySQL", "Oracle DB", "Spring/Spring-boot", "Symfony", "Vue.js", "PostgreSQL", "Elasticsearch", "ISO 27001", "ISO 50001", "CI/CD", "Cloud Security", "Kubernetes", "RHEL", "BASH", "OrientDB"
+  ],
+  "experience": [
+    {
+      "role": "Information Security Manager (ISM)",
+      "company": "Delupe A/S",
+      "website": "https://delupe.net/",
+      "period": "Oct, 2025 – Present",
+      "tech_stack": "ISO 27001, ISO 50001, Linux, Windows",
+      "details": [
+        "Strategic design and management of ISMS (ISO 27001:2022, ISO 50001).",
+        "Risk assessment, treatment, and internal audit coordination.",
+        "Technical security enforcement on Linux/Windows environments.",
+        "Ensuring compliance with international security standards."
+      ]
+    },
+    {
+      "role": "Lead Software Engineer / Tech Lead",
+      "company": "Delupe A/S",
+      "website": "https://delupe.net/",
+      "period": "Feb, 2023 – Present",
+      "tech_stack": "Java, Spring Boot, Vue.js, CI/CD, AI/ML",
+      "details": [
+        "Architecture and design of high-traffic e-commerce and ad-tech platforms.",
+        "API integrations, large-scale data pipelines, and system reliability.",
+        "Mentoring, CI/CD implementation, and AI/ML solution development.",
+        "Optimizing system performance for high-concurrency environments."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer",
+      "company": "Dialog Axiata PLC",
+      "website": "https://www.dialog.lk/",
+      "period": "Jun, 2021 - Nov, 2022",
+      "tech_stack": "Java, Spring Boot, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
+      "details": [
+        "System integration, middleware, and security implementations for charging projects.",
+        "Backend development with Java, Spring Boot, Python, and PHP.",
+        "Cloudification and modernization of prepaid loan platforms.",
+        "Collaborating with cross-functional teams to deliver robust telecom solutions."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "company": "Dialog Axiata PLC",
+      "website": "https://www.dialog.lk/",
+      "period": "Apr, 2019 - Jun, 2021",
+      "tech_stack": "Java, JavaScript, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
+      "details": [
+        "Provided technical solutions for business requirements, system features, and architecture planning.",
+        "Ensured charging systems met future demands, capacity, and integrity.",
+        "Contributed to Online Charging System (OCS) upgrade, USSD gateway implementation, and Data service for prepaid fixed connections.",
+        "Developed APIs, app modernization, and digitisation projects."
+      ]
+    },
+    {
+      "role": "Software Engineering Trainee",
+      "company": "Virtusa Pvt. Ltd",
+      "website": "https://www.virtusa.com/",
+      "period": "Nov, 2017 - Mar, 2018",
+      "tech_stack": "Java, MySQL, OrientDB, System Automation",
+      "details": [
+        "Assigned to internal projects such as GTO (Global Technology Office) Governance.",
+        "Worked under the R&D team on UI design, backend processes, and system automation.",
+        "Contributed to UI designs, weekly/monthly system automation, and database modifications."
+      ]
+    }
+  ],
+  "certifications": [
+    { "name": "ISO 27001:2022 Lead Auditor", "issuer": "Information Security Management Systems" },
+    { "name": "ISO 50001:2018 Lead Auditor", "issuer": "Energy Management Systems" }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Engineering (Computer Engineering)",
+      "institution": "University of Peradeniya, Sri Lanka",
+      "period": "2014 - 2019"
+    }
+  ]
+}

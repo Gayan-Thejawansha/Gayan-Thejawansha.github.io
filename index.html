@@ -44,6 +44,7 @@
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bxs-home"></i> <span>Home</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bxs-user"></i> <span>About</span></a></li>
         <li><a href="#resume" class="nav-link scrollto"><i class='bx bxs-user-detail'></i> <span>Resume</span></a></li>
+        <li><a href="#certifications" class="nav-link scrollto"><i class='bx bxs-badge-check'></i> <span>Certifications</span></a></li>
         <li><a href="#goals" class="nav-link scrollto"><i class="bx bxs-map-pin"></i> <span>Goals</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class='bx bxs-layout'></i> <span>Project
               Portfolio</span></a></li>
@@ -51,6 +52,7 @@
             <span>References</span></a>
         </li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bxs-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="cv.html" class="nav-link"><i class='bx bxs-file-pdf'></i> <span>View CV</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -495,6 +497,32 @@
 
       </div>
     </section><!-- End Resume Section -->
+
+    <!-- ======= Certifications Section ======= -->
+    <section id="certifications" class="resume">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Certifications</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="resume-item">
+              <a href="assets/infosec/GThejawansha TC-0063-26MK-0657-_ISO-9001_ISO-27001_ISO-19011_ENG.pdf" target="_blank">
+                <h4>ISO 27001:2022 Lead Auditor</h4>
+                <p><em>Information Security Management Systems</em></p>
+              </a>
+            </div>
+            <div class="resume-item">
+              <a href="assets/infosec/GThejawansha TC-0063-26MK-0657-_ISO-9001_ISO-27001_ISO-19011_ENG.pdf" target="_blank">
+                <h4>ISO 50001:2018 Lead Auditor</h4>
+                <p><em>Energy Management Systems</em></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Certifications Section -->
+
     <!-- ======= Goals Section ======= -->
     <section id="goals" class="resume section-bg">
       <div class="container" data-aos="fade-up">
@@ -819,6 +847,12 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- Fixed View CV Button -->
+  <a href="cv.html" class="view-cv-fixed d-flex align-items-center justify-content-center" title="View CV">
+    <i class="bi bi-file-earmark-pdf"></i>
+    <span class="ms-2">View CV</span>
+  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -833,6 +867,26 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <style>
+    .view-cv-fixed {
+      position: fixed;
+      bottom: 80px;
+      right: 15px;
+      z-index: 999;
+      padding: 0 15px;
+      height: 45px;
+      background: #0563bb;
+      color: #fff;
+      border-radius: 50px;
+      transition: all 0.4s;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .view-cv-fixed:hover {
+      background: #0678e3;
+      color: #fff;
+    }
+  </style>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="assets/js/emailSender.js"></script>
 
