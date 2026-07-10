@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Gayan Shanaka Thejawansha</title>
+    <style>
+        :root { --primary-color: #0563bb; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.5; color: #333; max-width: 850px; margin: 40px auto; padding: 20px; background: #f4f4f4; }
+        .cv-container { background: #fff; padding: 50px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { text-align: center; margin-bottom: 30px; }
+        h1 { margin: 0; color: var(--primary-color); }
+        .contact-info { text-align: center; font-size: 0.9em; color: #666; margin-bottom: 20px; }
+        h2 { border-bottom: 2px solid var(--primary-color); padding-bottom: 5px; margin-top: 30px; color: var(--primary-color); text-transform: uppercase; font-size: 1.2em; }
+        .item { margin-bottom: 15px; }
+        .item-header { display: flex; justify-content: space-between; font-weight: bold; }
+        .item-subheader { font-style: italic; color: #555; }
+        .tech-stack { font-size: 0.85em; color: #444; margin-top: 5px; margin-bottom: 10px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 5px; }
+        .no-print { text-align: center; margin-bottom: 20px; }
+        button { padding: 10px 20px; background: var(--primary-color); color: #fff; border: none; cursor: pointer; border-radius: 5px; }
+        @media print {
+            body { background: #fff; margin: 0; padding: 0; }
+            .cv-container { box-shadow: none; padding: 0; }
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="no-print">
+        <button onclick="window.print()">Download / Print as PDF</button>
+    </div>
+    <div class="cv-container">
+        <header>
+            <h1 id="name"></h1>
+            <div class="contact-info" id="contact"></div>
+        </header>
+        
+        <h2>Summary</h2>
+        <p id="summary"></p>
+        
+        <h2>Skills</h2>
+        <p id="skills"></p>
+
+        <h2>Experience</h2>
+        <div id="experience"></div>
+        
+        <h2>Certifications</h2>
+        <div id="certifications"></div>
+
+        <h2>Education</h2>
+        <div id="education"></div>
+    </div>
+
+    <script>
+        const data = {
+            "name": "Gayan Shanaka Thejawansha",
+            "title": "Lead Software Engineer & Information Security Manager",
+            "contact": {
+                "email": "gthejawansha2@gmail.com",
+                "phone": "+971 (58) 567 2580",
+                "location": "Dubai, UAE",
+                "portfolio": "https://gayan-thejawansha.github.io/"
+            },
+            "summary": "Hard-working, fast learner, and proven Software Engineer with a 4-year Computer Engineering degree and 3+ years of work experience. Dedicated problem solver skilled in Java, PHP, Python, and Cloud Security. Expert in building scalable e-commerce platforms and managing ISO-compliant information security systems.",
+            "skills": [
+                "Java", "PHP", "Python", "JavaScript", "HTML/CSS", "MySQL", "Oracle DB", "Spring/Spring-boot", "Symfony", "Vue.js", "PostgreSQL", "Elasticsearch", "ISO 27001", "ISO 50001", "CI/CD", "Cloud Security", "Kubernetes", "RHEL", "BASH", "OrientDB"
+            ],
+            "experience": [
+                {
+                    "role": "Information Security Manager (ISM)",
+                    "company": "Delupe A/S",
+                    "website": "https://delupe.net/",
+                    "period": "Oct, 2025 – Present",
+                    "tech_stack": "ISO 27001, ISO 50001, Linux, Windows",
+                    "details": [
+                        "Strategic design and management of ISMS (ISO 27001:2022, ISO 50001).",
+                        "Risk assessment, treatment, and internal audit coordination.",
+                        "Technical security enforcement on Linux/Windows environments.",
+                        "Ensuring compliance with international security standards."
+                    ]
+                },
+                {
+                    "role": "Lead Software Engineer / Tech Lead",
+                    "company": "Delupe A/S",
+                    "website": "https://delupe.net/",
+                    "period": "Feb, 2023 – Present",
+                    "tech_stack": "Java, Spring Boot, Vue.js, CI/CD, AI/ML",
+                    "details": [
+                        "Architecture and design of high-traffic e-commerce and ad-tech platforms.",
+                        "API integrations, large-scale data pipelines, and system reliability.",
+                        "Mentoring, CI/CD implementation, and AI/ML solution development.",
+                        "Optimizing system performance for high-concurrency environments."
+                    ]
+                },
+                {
+                    "role": "Senior Software Engineer",
+                    "company": "Dialog Axiata PLC",
+                    "website": "https://www.dialog.lk/",
+                    "period": "Jun, 2021 - Nov, 2022",
+                    "tech_stack": "Java, Spring Boot, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
+                    "details": [
+                        "System integration, middleware, and security implementations for charging projects.",
+                        "Backend development with Java, Spring Boot, Python, and PHP.",
+                        "Cloudification and modernization of prepaid loan platforms.",
+                        "Collaborating with cross-functional teams to deliver robust telecom solutions."
+                    ]
+                },
+                {
+                    "role": "Software Engineer",
+                    "company": "Dialog Axiata PLC",
+                    "website": "https://www.dialog.lk/",
+                    "period": "Apr, 2019 - Jun, 2021",
+                    "tech_stack": "Java, JavaScript, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
+                    "details": [
+                        "Provided technical solutions for business requirements, system features, and architecture planning.",
+                        "Ensured charging systems met future demands, capacity, and integrity.",
+                        "Contributed to Online Charging System (OCS) upgrade, USSD gateway implementation, and Data service for prepaid fixed connections.",
+                        "Developed APIs, app modernization, and digitisation projects."
+                    ]
+                },
+                {
+                    "role": "Software Engineering Trainee",
+                    "company": "Virtusa Pvt. Ltd",
+                    "website": "https://www.virtusa.com/",
+                    "period": "Nov, 2017 - Mar, 2018",
+                    "tech_stack": "Java, MySQL, OrientDB, System Automation",
+                    "details": [
+                        "Assigned to internal projects such as GTO (Global Technology Office) Governance.",
+                        "Worked under the R&D team on UI design, backend processes, and system automation.",
+                        "Contributed to UI designs, weekly/monthly system automation, and database modifications."
+                    ]
+                }
+            ],
+            "certifications": [
+                { "name": "ISO 27001:2022 Lead Auditor", "issuer": "Information Security Management Systems" },
+                { "name": "ISO 50001:2018 Lead Auditor", "issuer": "Energy Management Systems" }
+            ],
+            "education": [
+                {
+                    "degree": "Bachelor of Science in Engineering (Computer Engineering)",
+                    "institution": "University of Peradeniya, Sri Lanka",
+                    "period": "2014 - 2019"
+                }
+            ]
+        };
+
+        document.getElementById('name').innerText = data.name;
+        document.getElementById('contact').innerHTML = `${data.contact.email} | ${data.contact.phone} | ${data.contact.location} | <a href="${data.contact.portfolio}" target="_blank">Portfolio</a>`;
+        document.getElementById('summary').innerText = data.summary;
+        document.getElementById('skills').innerText = data.skills.join(', ');
+        
+        const expContainer = document.getElementById('experience');
+        data.experience.forEach(exp => {
+            let details = exp.details.map(d => `<li>${d}</li>`).join('');
+            let companyDisplay = exp.website ? `<a href="${exp.website}" target="_blank">${exp.company}</a>` : exp.company;
+            expContainer.innerHTML += `
+                <div class="item">
+                    <div class="item-header"><span>${exp.role}</span><span>${exp.period}</span></div>
+                    <div class="item-subheader">${companyDisplay}</div>
+                    <div class="tech-stack"><strong>Tech Stack:</strong> ${exp.tech_stack}</div>
+                    <ul>${details}</ul>
+                </div>`;
+        });
+
+        const certContainer = document.getElementById('certifications');
+        data.certifications.forEach(cert => {
+            certContainer.innerHTML += `<div class="item"><strong>${cert.name}</strong> - ${cert.issuer}</div>`;
+        });
+
+        const eduContainer = document.getElementById('education');
+        data.education.forEach(edu => {
+            eduContainer.innerHTML += `
+                <div class="item">
+                    <div class="item-header"><span>${edu.degree}</span><span>${edu.period}</span></div>
+                    <div class="item-subheader">${edu.institution}</div>
+                </div>`;
+        });
+    </script>
+</body>
+</html>
