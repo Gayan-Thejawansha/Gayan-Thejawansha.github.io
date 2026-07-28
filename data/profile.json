@@ -1,91 +1,367 @@
 {
-  "name": "Gayan Shanaka Thejawansha",
-  "title": "Lead Software Engineer & Information Security Manager",
-  "contact": {
-    "email": "gthejawansha2@gmail.com",
-    "phone": "+971 (58) 567 2580",
-    "location": "Dubai, UAE",
-    "portfolio": "https://gayan-thejawansha.github.io/"
+  "site": {
+    "url": "https://gayan-thejawansha.github.io/",
+    "title": "Gayan Thejawansha | Engineering Leadership & Information Security",
+    "description": "Portfolio of Gayan Thejawansha, a Dubai-based Lead Software Engineer and Information Security Manager building scalable commerce, ad-tech, telecom, and secure infrastructure platforms.",
+    "lastUpdated": "2026-07-28"
   },
-  "summary": "Hard-working, fast learner, and proven Software Engineer with a 4-year Computer Engineering degree and 3+ years of work experience. Dedicated problem solver skilled in Java, PHP, Python, and Cloud Security. Expert in building scalable e-commerce platforms and managing ISO-compliant information security systems.",
-  "skills": [
-    "Java", "PHP", "Python", "JavaScript", "HTML/CSS", "MySQL", "Oracle DB", "Spring/Spring-boot", "Symfony", "Vue.js", "PostgreSQL", "Elasticsearch", "ISO 27001", "ISO 50001", "CI/CD", "Cloud Security", "Kubernetes", "RHEL", "BASH", "OrientDB"
+  "name": "Gayan Shanaka Thejawansha",
+  "shortName": "Gayan Thejawansha",
+  "headline": "Lead Software Engineer & Information Security Manager",
+  "eyebrow": "Engineering leadership · Platform architecture · Information security",
+  "location": "Dubai, United Arab Emirates",
+  "email": "gthejawansha2@gmail.com",
+  "secondaryEmail": "gthejawansha@eng.pdn.ac.lk",
+  "teamsEmail": "gthejawansha2@outlook.com",
+  "phone": "+971 58 567 2580",
+  "whatsapp": "+94 77 733 3837",
+  "links": {
+    "portfolio": "https://gayan-thejawansha.github.io/",
+    "linkedin": "https://www.linkedin.com/in/gayan-thejawansha/",
+    "github": "https://github.com/Gayan-Thejawansha",
+    "facebook": "https://www.facebook.com/gayan.tj",
+    "instagram": "https://www.instagram.com/gayantj/",
+    "teams": "https://teams.microsoft.com/l/chat/0/0?users=gthejawansha2%40outlook.com",
+    "whatsapp": "https://wa.me/94777333837"
+  },
+  "summary": "Lead Software Engineer and Information Security Manager with 7+ years of full-time experience designing, modernizing, and securing commerce, ad-tech, and telecom platforms. Combines hands-on backend and infrastructure engineering with technical leadership, delivery ownership, and ISO 27001-aligned security governance across cloud and bare-metal environments.",
+  "heroSummary": "An engineer at heart and hands-on technical leader connecting platform architecture, reliable delivery, and ISO 27001-aligned security.",
+  "about": [
+    "I work where software architecture, operational reliability, and information security meet. My background spans telecom charging systems, high-volume merchant data and reporting platforms, API integrations, containerized infrastructure, and security-management systems.",
+    "An engineer at heart, I stay close to implementation while leading technical direction: shaping architecture, reviewing code, improving delivery systems, mentoring engineers, translating risk into practical controls, and partnering with product and business stakeholders."
   ],
-  "experience": [
+  "capabilities": [
     {
-      "role": "Information Security Manager (ISM)",
-      "company": "Delupe A/S",
-      "website": "https://delupe.net/",
-      "period": "Oct, 2025 – Present",
-      "tech_stack": "ISO 27001, ISO 50001, Linux, Windows",
-      "details": [
-        "Strategic design and management of ISMS (ISO 27001:2022, ISO 50001).",
-        "Risk assessment, treatment, and internal audit coordination.",
-        "Technical security enforcement on Linux/Windows environments.",
-        "Ensuring compliance with international security standards."
+      "title": "Architecture & leadership",
+      "description": "System design, technical roadmaps, delivery planning, code review, mentoring, cross-functional alignment, and reliability.",
+      "skills": [
+        "System architecture",
+        "Technical leadership",
+        "API design",
+        "Data pipelines",
+        "Mentoring",
+        "Agile delivery",
+        "Observability"
       ]
     },
     {
-      "role": "Lead Software Engineer / Tech Lead",
-      "company": "Delupe A/S",
-      "website": "https://delupe.net/",
-      "period": "Feb, 2023 – Present",
-      "tech_stack": "Java, Spring Boot, Vue.js, CI/CD, AI/ML",
-      "details": [
-        "Architecture and design of high-traffic e-commerce and ad-tech platforms.",
-        "API integrations, large-scale data pipelines, and system reliability.",
-        "Mentoring, CI/CD implementation, and AI/ML solution development.",
-        "Optimizing system performance for high-concurrency environments."
+      "title": "Backend & data platforms",
+      "description": "Hands-on development of integrations, services, processing pipelines, and reporting systems.",
+      "skills": [
+        "PHP",
+        "Symfony",
+        "Java",
+        "Spring Boot",
+        "Python",
+        "JavaScript",
+        "PostgreSQL",
+        "Redis",
+        "MySQL",
+        "Oracle Database",
+        "Elasticsearch"
       ]
     },
     {
-      "role": "Senior Software Engineer",
-      "company": "Dialog Axiata PLC",
-      "website": "https://www.dialog.lk/",
-      "period": "Jun, 2021 - Nov, 2022",
-      "tech_stack": "Java, Spring Boot, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
-      "details": [
-        "System integration, middleware, and security implementations for charging projects.",
-        "Backend development with Java, Spring Boot, Python, and PHP.",
-        "Cloudification and modernization of prepaid loan platforms.",
-        "Collaborating with cross-functional teams to deliver robust telecom solutions."
+      "title": "Cloud & platform engineering",
+      "description": "Containerized delivery, Linux operations, automation, performance tuning, and production support.",
+      "skills": [
+        "Docker",
+        "Kubernetes",
+        "Linux / RHEL",
+        "Bash",
+        "Nginx",
+        "PHP-FPM",
+        "GitHub Actions",
+        "CI/CD",
+        "AWS",
+        "Hetzner"
       ]
     },
     {
-      "role": "Software Engineer",
-      "company": "Dialog Axiata PLC",
-      "website": "https://www.dialog.lk/",
-      "period": "Apr, 2019 - Jun, 2021",
-      "tech_stack": "Java, JavaScript, Python, PHP, MySQL, OracleDB, Kubernetes, RHEL, BASH",
-      "details": [
-        "Provided technical solutions for business requirements, system features, and architecture planning.",
-        "Ensured charging systems met future demands, capacity, and integrity.",
-        "Contributed to Online Charging System (OCS) upgrade, USSD gateway implementation, and Data service for prepaid fixed connections.",
-        "Developed APIs, app modernization, and digitisation projects."
-      ]
-    },
-    {
-      "role": "Software Engineering Trainee",
-      "company": "Virtusa Pvt. Ltd",
-      "website": "https://www.virtusa.com/",
-      "period": "Nov, 2017 - Mar, 2018",
-      "tech_stack": "Java, MySQL, OrientDB, System Automation",
-      "details": [
-        "Assigned to internal projects such as GTO (Global Technology Office) Governance.",
-        "Worked under the R&D team on UI design, backend processes, and system automation.",
-        "Contributed to UI designs, weekly/monthly system automation, and database modifications."
+      "title": "Security & governance",
+      "description": "Risk-led security management that connects governance requirements to enforceable technical controls.",
+      "skills": [
+        "ISO 27001:2022",
+        "ISMS",
+        "Risk assessment",
+        "Risk treatment",
+        "Internal audit",
+        "Access control",
+        "Data privacy",
+        "Infrastructure hardening",
+        "Vulnerability management"
       ]
     }
   ],
+  "experience": [
+    {
+      "company": "Delupe A/S",
+      "companyUrl": "https://delupe.net/",
+      "logo": "assets/img/delupe.png",
+      "logoAlt": "Delupe",
+      "logoWidth": 8850,
+      "logoHeight": 3026,
+      "location": "Dubai, UAE · Denmark",
+      "period": "Feb 2023 – Present",
+      "roles": [
+        {
+          "title": "Information Security Manager",
+          "period": "Oct 2025 – Present",
+          "summary": "Owns the strategic development and operation of the information-security management system alongside a continuing engineering-leadership remit, including the identification and remediation of 17+ critical infrastructure risks.",
+          "bullets": [
+            "Leads the design and operation of an ISO 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal-audit coordination, and management reporting.",
+            "Established a structured assessment and treatment register that translates technical findings into prioritized controls and accountable actions.",
+            "Automates and enforces security controls across Linux and Windows environments, focusing on access control, malware protection, encryption, privilege management, firewalling, and network auditing.",
+            "Connects engineering, governance, business continuity, data protection, and security-awareness requirements across cloud and bare-metal infrastructure.",
+            "Developed server-fleet energy monitoring and operational reporting to improve infrastructure efficiency and management visibility."
+          ],
+          "technologies": [
+            "ISO 27001:2022",
+            "ISMS",
+            "Risk management",
+            "Linux",
+            "Windows",
+            "Infrastructure security",
+            "Audit coordination"
+          ]
+        },
+        {
+          "title": "Lead Software Engineer / Tech Lead",
+          "period": "Feb 2023 – Present",
+          "summary": "Leads architecture and delivery for commerce and ad-tech services, increasing merchant catalogue ingestion throughput 5x and reducing feed-processing latency 70% across onboarding, reporting, and partner integrations.",
+          "bullets": [
+            "Directs architecture and implementation for merchant catalogue ingestion, reporting services, and Google and Microsoft Shopping integrations.",
+            "Builds backend services and data workflows with PHP/Symfony, Python, JavaScript, PostgreSQL, and Redis across Docker and Kubernetes environments.",
+            "Introduced and improved GitHub Actions delivery pipelines plus logging, metrics, and tracing practices for faster and safer production changes.",
+            "Diagnosed and resolved recurring Nginx and PHP-FPM container stability issues through profiling, configuration tuning, service hardening, and operational automation.",
+            "Developed data pipelines for campaign clicks, cost, conversion, and revenue signals used by in-house CPC optimization work.",
+            "Leads sprint planning, code review, technical decision-making, and mentoring while partnering with product and commercial stakeholders."
+          ],
+          "technologies": [
+            "PHP",
+            "Symfony",
+            "Python",
+            "JavaScript",
+            "PostgreSQL",
+            "Redis",
+            "Docker",
+            "Kubernetes",
+            "Nginx",
+            "GitHub Actions",
+            "Observability"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Dialog Axiata PLC",
+      "companyUrl": "https://www.dialog.lk/",
+      "logo": "assets/img/Dialog_Axiata.png",
+      "logoAlt": "Dialog Axiata",
+      "logoWidth": 1200,
+      "logoHeight": 720,
+      "location": "Colombo, Sri Lanka",
+      "period": "Apr 2019 – Nov 2022",
+      "roles": [
+        {
+          "title": "Senior Software Engineer",
+          "period": "Jun 2021 – Nov 2022",
+          "summary": "Provided architecture, integration, middleware, security, and application-roadmap leadership for charging-related platforms.",
+          "bullets": [
+            "Designed technical solutions for system integration, middleware, security, and continuous-service requirements across charging-related projects.",
+            "Developed and supported backend services with Java/Spring Boot, Python, PHP, JavaScript, MySQL, and Oracle Database in AWS, Kubernetes, and RHEL environments.",
+            "Contributed to application modernization, digitization, and cloudification initiatives for prepaid-loan and microservice platforms.",
+            "Converted stakeholder requirements and production insight into architecture decisions, roadmaps, and improvement plans."
+          ],
+          "technologies": [
+            "Java",
+            "Spring Boot",
+            "Python",
+            "PHP",
+            "MySQL",
+            "Oracle Database",
+            "Kubernetes",
+            "AWS",
+            "RHEL",
+            "Bash"
+          ]
+        },
+        {
+          "title": "Software Engineer",
+          "period": "Apr 2019 – Jun 2021",
+          "summary": "Delivered backend services, integrations, and modernization work for telecom charging and prepaid platforms.",
+          "bullets": [
+            "Designed technical solutions using system performance, utilization, capacity, integrity, and technology-roadmap requirements.",
+            "Contributed to an Online Charging System upgrade, supplementary-application upgrades, and a USSD gateway for fixed connections.",
+            "Developed APIs supporting prepaid fixed-connection services and contributed to application modernization and digitization.",
+            "Built and operated Java, Spring, Python, PHP, MySQL, and Oracle services in Kubernetes and RHEL environments."
+          ],
+          "technologies": [
+            "Java",
+            "Spring",
+            "Python",
+            "PHP",
+            "JavaScript",
+            "MySQL",
+            "Oracle Database",
+            "Kubernetes",
+            "RHEL",
+            "Bash"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Virtusa Pvt. Ltd",
+      "companyUrl": "https://www.virtusa.com/",
+      "logo": "assets/img/virtusa.png",
+      "logoAlt": "Virtusa",
+      "logoWidth": 800,
+      "logoHeight": 296,
+      "location": "Colombo, Sri Lanka",
+      "period": "Nov 2017 – Mar 2018",
+      "roles": [
+        {
+          "title": "Software Engineering Trainee",
+          "period": "Nov 2017 – Mar 2018",
+          "summary": "Worked with an R&D team on internal governance-platform interfaces, Java processes, automation, and data changes.",
+          "bullets": [
+            "Supported the Global Technology Office governance platform through interface work, Java backend processes, and database changes.",
+            "Automated weekly and monthly workflows spanning frontend and backend processes.",
+            "Worked with Java, MySQL, OrientDB, and system-automation tooling in a collaborative R&D environment."
+          ],
+          "technologies": [
+            "Java",
+            "MySQL",
+            "OrientDB",
+            "System automation"
+          ]
+        }
+      ]
+    }
+  ],
+  "caseStudies": [
+    {
+      "number": "01",
+      "title": "Merchant data and reporting platform",
+      "context": "Commerce & ad-tech",
+      "challenge": "Scale merchant onboarding, catalogue ingestion, partner feeds, and campaign reporting while maintaining reliable operations.",
+      "approach": "Led service and data-flow design across PHP/Symfony, PostgreSQL, Redis, Docker/Kubernetes, partner APIs, CI/CD, and observability.",
+      "outcome": "Increased merchant catalogue throughput 5x and reduced feed-processing latency 70%, while improving release safety and production visibility.",
+      "skills": [
+        "Architecture",
+        "Data pipelines",
+        "Partner APIs",
+        "Reliability"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Telecom platform modernization",
+      "context": "Charging & integration",
+      "challenge": "Modernize business-critical prepaid and charging services while preserving capacity, integrity, and continuous availability.",
+      "approach": "Designed APIs, integrations, middleware, and cloudification work using Java/Spring, Python, PHP, Kubernetes, Oracle, MySQL, RHEL, and Bash.",
+      "outcome": "Supported charging-system upgrades, prepaid fixed services, USSD integration, application modernization, and microservice adoption.",
+      "skills": [
+        "System integration",
+        "Modernization",
+        "Cloudification",
+        "Telecom"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Security governance to technical controls",
+      "context": "Information security",
+      "challenge": "Establish risk-led governance for infrastructure and merchant data without separating policy from engineering reality.",
+      "approach": "Built an ISO 27001-aligned risk and treatment process, coordinated audit activity, and automated controls across Linux, Windows, cloud, and bare-metal systems.",
+      "outcome": "Identified and remediated 17+ critical infrastructure risks while establishing accountable treatment, stronger technical enforcement, and management-ready reporting.",
+      "skills": [
+        "ISMS",
+        "Risk treatment",
+        "Control automation",
+        "Audit readiness"
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Engineering leadership as a delivery system",
+      "context": "Technical leadership",
+      "challenge": "Scale delivery and ownership across evolving platforms without losing implementation quality, reliability, or engineering context.",
+      "approach": "Combined hands-on architecture with sprint planning, technical decision-making, code review, mentoring, CI/CD, observability, and cross-functional alignment.",
+      "outcome": "Created shorter feedback loops, safer production changes, clearer technical direction, and a stronger engineering culture around shared ownership.",
+      "skills": [
+        "Technical leadership",
+        "Mentoring",
+        "CI/CD",
+        "Observability"
+      ]
+    }
+  ],
+  "earlierProjects": [
+    {
+      "title": "Sabermetrics for Cricket",
+      "period": "Apr 2018 – Jan 2019",
+      "description": "Applied statistical modelling and data-mining techniques to team selection under budget constraints.",
+      "contribution": "Developed and evaluated player metrics using R, Python, machine learning, and neural-network techniques.",
+      "url": "https://github.com/Gayan-Thejawansha/CRICKET-SABERMETRICS"
+    },
+    {
+      "title": "S-Sense",
+      "period": "May 2016",
+      "description": "Award-winning wearable concept for identifying irregular sleep patterns and connecting health signals to an Android application.",
+      "contribution": "Implemented sensor integration and Bluetooth connectivity with Arduino and Android.",
+      "url": "https://github.com/Gayan-Thejawansha/Hackathon_2016"
+    },
+    {
+      "title": "Automated Website Classification System",
+      "period": "2016",
+      "description": "Automated classification of websites to support more accurate web-directory categorization.",
+      "contribution": "Implemented HTML acquisition and data preprocessing, then analyzed the resulting data with a k-nearest-neighbours approach using Linux shell tooling and Java.",
+      "url": "https://github.com/Gayan-Thejawansha/Web_Classification_system"
+    },
+    {
+      "title": "Expert Miner",
+      "period": "May 2017",
+      "description": "Award-winning hyperspectral-imagery project for identifying potential natural-resource locations.",
+      "contribution": "Read and processed hyperspectral data with Python, MATLAB, image-processing, and mathematical methods.",
+      "url": "https://www.cs.umd.edu/~gihan/teambitecode/projects/expert-miner.html"
+    },
+    {
+      "title": "ToolsEd",
+      "period": "2016",
+      "description": "Academic concept for online student collaboration and resource sharing.",
+      "contribution": "Contributed to the design and implementation of collaborative workflows as a team project.",
+      "url": ""
+    },
+    {
+      "title": "Digital Score Board System",
+      "period": "2016",
+      "description": "Low-cost, remote-controlled LED scoreboard designed for indoor sports.",
+      "contribution": "Handled I/O, digital-circuit design, hardware implementation, and microcontroller programming with Arduino, Android, and Java.",
+      "url": ""
+    }
+  ],
   "certifications": [
-    { "name": "ISO 27001:2022 Lead Auditor", "issuer": "Information Security Management Systems" },
-    { "name": "ISO 50001:2018 Lead Auditor", "issuer": "Energy Management Systems" }
+    {
+      "name": "Internal Auditor of Management Systems",
+      "issuer": "T-CERT SYSTEM Academy",
+      "note": "ISO 9001:2015 and ISO/IEC 27001:2022 according to ISO 19011:2018 · Apr 2026 · TC-0063-26MK-0657",
+      "url": "assets/documents/iso-27001-internal-auditor-certificate.pdf"
+    }
   ],
   "education": [
     {
-      "degree": "Bachelor of Science in Engineering (Computer Engineering)",
-      "institution": "University of Peradeniya, Sri Lanka",
-      "period": "2014 - 2019"
+      "degree": "Bachelor of Science in Engineering",
+      "specialization": "Computer Engineering",
+      "institution": "University of Peradeniya",
+      "location": "Sri Lanka",
+      "period": "Nov 2014 – Feb 2019",
+      "url": "https://www.pdn.ac.lk/",
+      "logo": "assets/img/UOP.png",
+      "logoAlt": "University of Peradeniya",
+      "logoWidth": 500,
+      "logoHeight": 126
     }
   ]
 }

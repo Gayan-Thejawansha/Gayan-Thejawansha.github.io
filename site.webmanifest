@@ -1,0 +1,15 @@
+{
+  "name": "Gayan Thejawansha — Professional Portfolio",
+  "short_name": "Gayan Thejawansha",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f4f1ea",
+  "theme_color": "#0b1f33",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

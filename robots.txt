@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gayan-thejawansha.github.io/sitemap.xml

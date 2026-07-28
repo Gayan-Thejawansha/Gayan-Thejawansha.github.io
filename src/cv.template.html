@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{name}} — CV</title>
+    <meta name="description" content="ATS-friendly CV for {{name}}, {{headline}}.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{siteUrl}}cv.html">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/cv.css">
+  </head>
+  <body>
+    <nav class="cv-actions" aria-label="CV actions">
+      <a href="index.html">Back to portfolio</a>
+      <a href="assets/documents/Gayan_Thejawansha_CV.pdf" download>Download PDF</a>
+      <button type="button" onclick="window.print()">Print / save as PDF</button>
+    </nav>
+
+    <main class="cv">
+      <header class="cv-header">
+        <p class="cv-kicker">Curriculum vitae</p>
+        <h1>{{name}}</h1>
+        <p class="cv-title">{{headline}}</p>
+        {{cvContact}}
+      </header>
+
+      <section class="cv-section" aria-labelledby="summary-title">
+        <h2 id="summary-title">Professional Summary</h2>
+        <p>{{summary}}</p>
+      </section>
+
+      <section class="cv-section" aria-labelledby="competencies-title">
+        <h2 id="competencies-title">Core Competencies</h2>
+        <div class="cv-skills">{{cvSkills}}</div>
+      </section>
+
+      <section class="cv-section" aria-labelledby="professional-experience-title">
+        <h2 id="professional-experience-title">Professional Experience</h2>
+        {{cvExperience}}
+      </section>
+
+      <section class="cv-section" aria-labelledby="projects-title">
+        <h2 id="projects-title">Selected Impact Projects</h2>
+        {{cvProjects}}
+      </section>
+
+      <section class="cv-section" aria-labelledby="certifications-title">
+        <h2 id="certifications-title">Certifications</h2>
+        {{cvCertifications}}
+      </section>
+
+      <section class="cv-section" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        {{cvEducation}}
+      </section>
+
+      <footer class="cv-footer">
+        <p>References available on request.</p>
+        <p>Last updated {{lastUpdated}}</p>
+      </footer>
+    </main>
+  </body>
+</html>

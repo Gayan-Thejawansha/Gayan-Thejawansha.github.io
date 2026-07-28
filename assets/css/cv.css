@@ -1,0 +1,435 @@
+:root {
+  --ink: #17212b;
+  --muted: #52606d;
+  --accent: #0b6767;
+  --line: #cbd2d5;
+  --paper: #ffffff;
+  --screen: #e9ecee;
+  --font: Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--screen);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--screen);
+  font-family: var(--font);
+  font-size: 10.5pt;
+  line-height: 1.42;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+:focus-visible {
+  outline: 3px solid #0c8d89;
+  outline-offset: 3px;
+}
+
+.cv-actions {
+  display: flex;
+  max-width: 900px;
+  padding: 1rem 0;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.cv-actions a,
+.cv-actions button {
+  min-height: 2.7rem;
+  padding: 0.55rem 0.9rem;
+  color: #ffffff;
+  background: #16334a;
+  border: 1px solid #16334a;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cv {
+  width: min(900px, calc(100% - 2rem));
+  padding: 0.65in 0.72in;
+  margin: 0 auto 2rem;
+  background: var(--paper);
+  box-shadow: 0 1.5rem 4rem rgba(23, 33, 43, 0.14);
+}
+
+.cv-header {
+  padding-bottom: 0.28in;
+  border-bottom: 2px solid var(--ink);
+}
+
+.cv-kicker {
+  margin: 0 0 0.04in;
+  color: var(--accent);
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.cv h1 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 26pt;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.cv-title {
+  margin: 0.08in 0 0;
+  color: var(--accent);
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+.cv-contact {
+  display: flex;
+  margin-top: 0.13in;
+  flex-wrap: wrap;
+  gap: 0.04in 0.16in;
+  color: var(--muted);
+  font-size: 8.4pt;
+  font-style: normal;
+}
+
+.cv-contact > *:not(:last-child)::after {
+  margin-left: 0.16in;
+  color: var(--line);
+  content: "•";
+  text-decoration: none;
+}
+
+.cv-section {
+  margin-top: 0.25in;
+}
+
+.cv-section > h2 {
+  padding-bottom: 0.05in;
+  margin: 0 0 0.12in;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  font-size: 10.5pt;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.cv-section > p {
+  margin: 0;
+}
+
+.cv-skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.08in 0.25in;
+}
+
+.cv-skill-group {
+  break-inside: avoid;
+}
+
+.cv-skill-group h3 {
+  margin: 0;
+  font-size: 9pt;
+}
+
+.cv-skill-group p {
+  margin: 0.02in 0 0;
+  color: var(--muted);
+  font-size: 8.6pt;
+}
+
+.cv-company {
+  margin-top: 0.19in;
+  break-inside: auto;
+}
+
+.cv-company:first-of-type {
+  margin-top: 0;
+}
+
+.cv-company-header,
+.cv-role > header,
+.cv-education {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.2in;
+}
+
+.cv-company-header {
+  padding-bottom: 0.04in;
+  border-bottom: 1px solid var(--line);
+  break-after: avoid;
+}
+
+.cv-company-header h3 {
+  margin: 0;
+  font-size: 11pt;
+}
+
+.cv-company-header p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 8.5pt;
+}
+
+.cv-company-header > p {
+  flex: 0 0 auto;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.cv-role {
+  margin-top: 0.1in;
+  break-inside: auto;
+}
+
+.cv-role > header {
+  break-after: avoid;
+}
+
+.cv-role h4 {
+  margin: 0;
+  font-size: 9.5pt;
+}
+
+.cv-role-summary {
+  margin: 0.035in 0 0;
+  color: var(--muted);
+  font-size: 8.3pt;
+}
+
+.cv-role header p {
+  margin: 0;
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 8.2pt;
+  font-weight: 700;
+}
+
+.cv-role ul {
+  padding-left: 0.18in;
+  margin: 0.05in 0 0;
+}
+
+.cv-role li {
+  margin-bottom: 0.025in;
+}
+
+.cv-stack {
+  margin: 0.05in 0 0;
+  color: var(--muted);
+  font-size: 8.1pt;
+}
+
+.cv-project,
+.cv-simple-item {
+  margin-top: 0.1in;
+  break-inside: avoid;
+}
+
+.cv-project:first-of-type,
+.cv-simple-item:first-of-type {
+  margin-top: 0;
+}
+
+.cv-project h3,
+.cv-simple-item h3 {
+  margin: 0;
+  font-size: 9.5pt;
+}
+
+.cv-project h3 span {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.cv-project p,
+.cv-simple-item p {
+  margin: 0.025in 0 0;
+}
+
+.cv-education > p {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 8.4pt;
+}
+
+.cv-footer {
+  display: flex;
+  padding-top: 0.14in;
+  margin-top: 0.25in;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 8pt;
+}
+
+.cv-footer p {
+  margin: 0;
+}
+
+@media (max-width: 680px) {
+  .cv {
+    width: 100%;
+    padding: 2rem 1.1rem;
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .cv h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  .cv-contact {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .cv-contact > *::after {
+    display: none;
+  }
+
+  .cv-skills {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-company-header,
+  .cv-role > header,
+  .cv-education {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+
+  .cv-footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0.45in 0.52in;
+}
+
+@media print {
+  html,
+  body {
+    background: #ffffff;
+  }
+
+  body {
+    font-size: 8.85pt;
+    line-height: 1.3;
+  }
+
+  .cv-actions {
+    display: none;
+  }
+
+  .cv {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .cv-header {
+    padding-bottom: 0.16in;
+  }
+
+  .cv h1 {
+    font-size: 22pt;
+  }
+
+  .cv-title {
+    font-size: 10.5pt;
+  }
+
+  .cv-contact {
+    margin-top: 0.08in;
+    font-size: 7.4pt;
+  }
+
+  .cv-section {
+    margin-top: 0.15in;
+  }
+
+  .cv-section > h2 {
+    margin-bottom: 0.07in;
+    font-size: 9.2pt;
+  }
+
+  .cv-skills {
+    gap: 0.04in 0.2in;
+  }
+
+  .cv-skill-group h3,
+  .cv-role h4,
+  .cv-project h3,
+  .cv-simple-item h3 {
+    font-size: 8.3pt;
+  }
+
+  .cv-skill-group p,
+  .cv-company-header p,
+  .cv-role header p,
+  .cv-role-summary,
+  .cv-stack {
+    font-size: 7.3pt;
+  }
+
+  .cv-company {
+    margin-top: 0.1in;
+  }
+
+  .cv-role {
+    margin-top: 0.06in;
+  }
+
+  .cv-role ul {
+    margin-top: 0.025in;
+  }
+
+  .cv-role li {
+    margin-bottom: 0.012in;
+  }
+
+  .cv-project,
+  .cv-simple-item {
+    margin-top: 0.055in;
+  }
+
+  .cv-footer {
+    padding-top: 0.08in;
+    margin-top: 0.14in;
+    font-size: 7pt;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

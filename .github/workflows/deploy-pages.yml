@@ -1,0 +1,83 @@
+name: Deploy portfolio to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build public artifact
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          package-manager-cache: true
+
+      - name: Install validation dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Build and validate static content
+        run: npm test
+
+      - name: Generate text-based CV PDF
+        run: |
+          google-chrome \
+            --headless=new \
+            --no-sandbox \
+            --disable-gpu \
+            --no-pdf-header-footer \
+            --print-to-pdf="$GITHUB_WORKSPACE/assets/documents/Gayan_Thejawansha_CV.pdf" \
+            "file://$GITHUB_WORKSPACE/cv.html"
+          npm run build
+
+      - name: Verify CV text extraction
+        run: |
+          if ! command -v pdftotext >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install --yes poppler-utils
+          fi
+          pdftotext assets/documents/Gayan_Thejawansha_CV.pdf cv-text.txt
+          grep --fixed-strings "Gayan Shanaka Thejawansha" cv-text.txt
+          grep --fixed-strings "Professional Experience" cv-text.txt
+          grep --fixed-strings "Delupe A/S" cv-text.txt
+          grep --fixed-strings "Dialog Axiata PLC" cv-text.txt
+
+      - name: Audit development dependencies
+        run: npm audit
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload public artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
