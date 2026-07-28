@@ -1,0 +1,28 @@
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*credentials*.json
+*recovery-codes*
+*recovery_codes*
+*.pem
+*.key
+
+# Generated security and audit reports
+*-sast-report.*
+gitleaks-report.*
+lighthouse-report.*
+
+# Dependency and build output
+node_modules/
+dist/
+.cache/
+
+# Local audit artifacts
+.codex-*

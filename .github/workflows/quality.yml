@@ -1,0 +1,35 @@
+name: Site quality
+
+on:
+  pull_request:
+  push:
+    branches:
+      - dev
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Build and validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          package-manager-cache: true
+
+      - name: Install validation dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Run build and quality gates
+        run: npm test
+
+      - name: Audit development dependencies
+        run: npm audit
