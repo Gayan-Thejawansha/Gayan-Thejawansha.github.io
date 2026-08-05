@@ -1187,6 +1187,17 @@ textarea {
   color: var(--white);
 }
 
+.credential-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 2rem;
+}
+
+.credential-links .text-link {
+  margin-top: 0;
+}
+
 .contact-section {
   padding: clamp(5.5rem, 10vw, 9rem) 0;
   color: var(--white);

@@ -257,9 +257,19 @@ const renderEducation = () =>
           <h3>${escapeHtml(education.degree)}</h3>
           <p>${escapeHtml(education.specialization)}</p>
           <p>${escapeHtml(education.institution)} · ${escapeHtml(education.location)}</p>
-          <a class="text-link" href="${escapeAttribute(education.url)}" rel="noreferrer">
-            University website <span aria-hidden="true">↗</span>
-          </a>
+          <div class="credential-links">
+            ${(education.documents ?? [])
+              .map(
+                (document) => `
+                  <a class="text-link" href="${escapeAttribute(document.url)}">
+                    ${escapeHtml(document.label)} <span aria-hidden="true">↗</span>
+                  </a>`
+              )
+              .join("")}
+            <a class="text-link" href="${escapeAttribute(education.url)}" rel="noreferrer">
+              University website <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </article>`
     )
     .join("");
@@ -627,14 +637,19 @@ for (const asset of [
   copyFileSync(source, target);
 }
 
-const certificateSource = join(
-  root,
-  "assets/documents/iso-27001-internal-auditor-certificate.pdf"
-);
-if (existsSync(certificateSource)) {
-  const target = join(dist, "assets/documents/iso-27001-internal-auditor-certificate.pdf");
+for (const document of [
+  "assets/documents/iso-27001-internal-auditor-certificate.pdf",
+  "assets/documents/Degree Certificate - Redacted.pdf",
+  "assets/documents/Transcript - Redacted.pdf",
+  "assets/documents/Advance Level Certificate - Redacted.pdf"
+]) {
+  const source = join(root, document);
+  if (!existsSync(source)) {
+    throw new Error(`Missing public document: ${document}`);
+  }
+  const target = join(dist, document);
   mkdirSync(dirname(target), { recursive: true });
-  copyFileSync(certificateSource, target);
+  copyFileSync(source, target);
 }
 
 const cvPdf = join(root, "assets/documents/Gayan_Thejawansha_CV.pdf");

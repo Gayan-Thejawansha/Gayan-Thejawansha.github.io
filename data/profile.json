@@ -3,7 +3,7 @@
     "url": "https://gayan-thejawansha.github.io/",
     "title": "Gayan Thejawansha | Engineering Leadership & Information Security",
     "description": "Portfolio of Gayan Thejawansha, a Dubai-based Lead Software Engineer and Information Security Manager building scalable commerce, ad-tech, telecom, and secure infrastructure platforms.",
-    "lastUpdated": "2026-07-28"
+    "lastUpdated": "2026-08-05"
   },
   "name": "Gayan Shanaka Thejawansha",
   "shortName": "Gayan Thejawansha",
@@ -358,6 +358,20 @@
       "location": "Sri Lanka",
       "period": "Nov 2014 – Feb 2019",
       "url": "https://www.pdn.ac.lk/",
+      "documents": [
+        {
+          "label": "Degree certificate",
+          "url": "assets/documents/Degree Certificate - Redacted.pdf"
+        },
+        {
+          "label": "Academic transcript",
+          "url": "assets/documents/Transcript - Redacted.pdf"
+        },
+        {
+          "label": "Advanced Level certificate",
+          "url": "assets/documents/Advance Level Certificate - Redacted.pdf"
+        }
+      ],
       "logo": "assets/img/UOP.png",
       "logoAlt": "University of Peradeniya",
       "logoWidth": 500,

@@ -12,8 +12,9 @@ Software Engineer and Information Security Manager based in Dubai.
   `dist/` artifact.
 - `assets/css/` and `assets/js/` contain the dependency-free presentation and
   interaction layer.
-- `assets/documents/` contains the generated ATS-friendly PDF and a public
-  certificate copy.
+- `assets/documents/` contains the generated ATS-friendly PDF and redacted
+  education and certification records linked from the portfolio. Encrypted
+  source records are kept locally under the ignored `private/` directory.
 - GitHub Actions validates and deploys only `dist/` to GitHub Pages.
 
 The generated root `index.html`, `cv.html`, `404.html`, `robots.txt`,

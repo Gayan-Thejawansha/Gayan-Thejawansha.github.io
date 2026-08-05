@@ -24,5 +24,8 @@ node_modules/
 dist/
 .cache/
 
+# Encrypted source records; never include private originals in the public build
+private/
+
 # Local audit artifacts
 .codex-*
