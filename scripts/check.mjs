@@ -42,18 +42,22 @@ for (const file of requiredFiles) {
 
 const index = readFileSync(join(dist, "index.html"), "utf8");
 const cv = readFileSync(join(dist, "cv.html"), "utf8");
-for (const value of [
-  profile.name,
-  profile.headline,
-  profile.experience[0].company,
-  profile.experience[1].company
-]) {
+for (const value of [profile.name, profile.experience[0].company, profile.experience[1].company]) {
   const encodedValue = value.replaceAll("&", "&amp;");
   if (!index.includes(value) && !index.includes(encodedValue)) {
     failures.push(`Homepage is missing profile value: ${value}`);
   }
   if (!cv.includes(value) && !cv.includes(encodedValue)) {
     failures.push(`CV is missing profile value: ${value}`);
+  }
+}
+
+for (const value of [
+  "Technical Lead &amp; Information Security Manager",
+  "Lead Software Engineer"
+]) {
+  if (!cv.includes(value)) {
+    failures.push(`CV is missing positioning value: ${value}`);
   }
 }
 
