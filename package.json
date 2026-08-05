@@ -9,7 +9,7 @@
     "check": "node scripts/check.mjs",
     "check:budget": "node scripts/performance-budget.mjs",
     "validate:html": "html-validate index.html cv.html 404.html",
-    "validate:links": "linkinator dist --recurse --check-fragments --check-css --skip 'https://.*' --skip 'mailto:.*' --skip 'tel:.*' --verbosity error",
+    "validate:links": "linkinator dist --recurse --check-fragments --check-css --config linkinator.config.json --verbosity error",
     "test": "npm run build && npm run check && npm run check:budget && npm run validate:html && npm run validate:links"
   },
   "engines": {

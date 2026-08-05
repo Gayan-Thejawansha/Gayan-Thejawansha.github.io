@@ -25,6 +25,12 @@
     "whatsapp": "https://wa.me/94777333837"
   },
   "summary": "Lead Software Engineer and Information Security Manager with 7+ years of full-time experience designing, modernizing, and securing commerce, ad-tech, and telecom platforms. Combines hands-on backend and infrastructure engineering with technical leadership, delivery ownership, and ISO 27001-aligned security governance across cloud and bare-metal environments.",
+  "cvHighlights": [
+    "Increased merchant catalogue ingestion throughput 5x and reduced feed processing latency 70% across commerce and ad-tech platforms.",
+    "Identified and remediated 17+ critical infrastructure risks while establishing ISO 27001:2022-aligned security governance and technical controls.",
+    "Led telecom charging modernization across Online Charging System upgrades, prepaid fixed services, USSD integration, and microservice platforms.",
+    "Strengthened delivery through architecture leadership, code review, mentoring, CI/CD, observability, and cross-functional technical decision-making."
+  ],
   "heroSummary": "An engineer at heart and hands-on technical leader connecting platform architecture, reliable delivery, and ISO 27001-aligned security.",
   "about": [
     "I work where software architecture, operational reliability, and information security meet. My background spans telecom charging systems, high-volume merchant data and reporting platforms, API integrations, containerized infrastructure, and security-management systems.",
@@ -101,19 +107,19 @@
       "logoAlt": "Delupe",
       "logoWidth": 8850,
       "logoHeight": 3026,
-      "location": "Dubai, UAE · Denmark",
+      "location": "Dubai, UAE | Delupe A/S, Denmark",
       "period": "Feb 2023 – Present",
       "roles": [
         {
           "title": "Information Security Manager",
           "period": "Oct 2025 – Present",
-          "summary": "Owns the strategic development and operation of the information-security management system alongside a continuing engineering-leadership remit, including the identification and remediation of 17+ critical infrastructure risks.",
+          "summary": "Owns the strategic development and operation of the information security management system alongside a continuing engineering leadership remit, including the identification and remediation of 17+ critical infrastructure risks.",
           "bullets": [
-            "Leads the design and operation of an ISO 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal-audit coordination, and management reporting.",
+            "Leads the design and operation of an ISO 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal audit coordination, and management reporting.",
             "Established a structured assessment and treatment register that translates technical findings into prioritized controls and accountable actions.",
             "Automates and enforces security controls across Linux and Windows environments, focusing on access control, malware protection, encryption, privilege management, firewalling, and network auditing.",
-            "Connects engineering, governance, business continuity, data protection, and security-awareness requirements across cloud and bare-metal infrastructure.",
-            "Developed server-fleet energy monitoring and operational reporting to improve infrastructure efficiency and management visibility."
+            "Connects engineering, governance, business continuity, data protection, and security awareness requirements across cloud and bare-metal infrastructure.",
+            "Developed server fleet energy monitoring and operational reporting to improve infrastructure efficiency and management visibility."
           ],
           "technologies": [
             "ISO 27001:2022",
@@ -128,7 +134,7 @@
         {
           "title": "Lead Software Engineer / Tech Lead",
           "period": "Feb 2023 – Present",
-          "summary": "Leads architecture and delivery for commerce and ad-tech services, increasing merchant catalogue ingestion throughput 5x and reducing feed-processing latency 70% across onboarding, reporting, and partner integrations.",
+          "summary": "Leads architecture and delivery for commerce and ad-tech services, increasing merchant catalogue ingestion throughput 5x and reducing feed processing latency 70% across onboarding, reporting, and partner integrations.",
           "bullets": [
             "Directs architecture and implementation for merchant catalogue ingestion, reporting services, and Google and Microsoft Shopping integrations.",
             "Builds backend services and data workflows with PHP/Symfony, Python, JavaScript, PostgreSQL, and Redis across Docker and Kubernetes environments.",
@@ -166,11 +172,11 @@
         {
           "title": "Senior Software Engineer",
           "period": "Jun 2021 – Nov 2022",
-          "summary": "Provided architecture, integration, middleware, security, and application-roadmap leadership for charging-related platforms.",
+          "summary": "Provided architecture, integration, middleware, security, and application roadmap leadership for charging platforms.",
           "bullets": [
-            "Designed technical solutions for system integration, middleware, security, and continuous-service requirements across charging-related projects.",
+            "Designed technical solutions for system integration, middleware, security, and continuous service requirements across charging projects.",
             "Developed and supported backend services with Java/Spring Boot, Python, PHP, JavaScript, MySQL, and Oracle Database in AWS, Kubernetes, and RHEL environments.",
-            "Contributed to application modernization, digitization, and cloudification initiatives for prepaid-loan and microservice platforms.",
+            "Contributed to application modernization, digitization, and cloud migration initiatives for prepaid loan and microservice platforms.",
             "Converted stakeholder requirements and production insight into architecture decisions, roadmaps, and improvement plans."
           ],
           "technologies": [
@@ -188,12 +194,12 @@
         },
         {
           "title": "Software Engineer",
-          "period": "Apr 2019 – Jun 2021",
+          "period": "Apr 2019 – May 2021",
           "summary": "Delivered backend services, integrations, and modernization work for telecom charging and prepaid platforms.",
           "bullets": [
-            "Designed technical solutions using system performance, utilization, capacity, integrity, and technology-roadmap requirements.",
-            "Contributed to an Online Charging System upgrade, supplementary-application upgrades, and a USSD gateway for fixed connections.",
-            "Developed APIs supporting prepaid fixed-connection services and contributed to application modernization and digitization.",
+            "Designed technical solutions using system performance, utilization, capacity, integrity, and technology roadmap requirements.",
+            "Contributed to an Online Charging System upgrade, supplementary application upgrades, and a USSD gateway for fixed connections.",
+            "Developed APIs supporting prepaid fixed connection services and contributed to application modernization and digitization.",
             "Built and operated Java, Spring, Python, PHP, MySQL, and Oracle services in Kubernetes and RHEL environments."
           ],
           "technologies": [
@@ -224,11 +230,11 @@
         {
           "title": "Software Engineering Trainee",
           "period": "Nov 2017 – Mar 2018",
-          "summary": "Worked with an R&D team on internal governance-platform interfaces, Java processes, automation, and data changes.",
+          "summary": "Worked with an R&D team on internal governance platform interfaces, Java processes, automation, and data changes.",
           "bullets": [
             "Supported the Global Technology Office governance platform through interface work, Java backend processes, and database changes.",
             "Automated weekly and monthly workflows spanning frontend and backend processes.",
-            "Worked with Java, MySQL, OrientDB, and system-automation tooling in a collaborative R&D environment."
+            "Worked with Java, MySQL, OrientDB, and system automation tooling in a collaborative R&D environment."
           ],
           "technologies": [
             "Java",
@@ -247,7 +253,7 @@
       "context": "Commerce & ad-tech",
       "challenge": "Scale merchant onboarding, catalogue ingestion, partner feeds, and campaign reporting while maintaining reliable operations.",
       "approach": "Led service and data-flow design across PHP/Symfony, PostgreSQL, Redis, Docker/Kubernetes, partner APIs, CI/CD, and observability.",
-      "outcome": "Increased merchant catalogue throughput 5x and reduced feed-processing latency 70%, while improving release safety and production visibility.",
+      "outcome": "Increased merchant catalogue throughput 5x and reduced feed processing latency 70%, while improving release safety and production visibility.",
       "skills": [
         "Architecture",
         "Data pipelines",
@@ -260,12 +266,12 @@
       "title": "Telecom platform modernization",
       "context": "Charging & integration",
       "challenge": "Modernize business-critical prepaid and charging services while preserving capacity, integrity, and continuous availability.",
-      "approach": "Designed APIs, integrations, middleware, and cloudification work using Java/Spring, Python, PHP, Kubernetes, Oracle, MySQL, RHEL, and Bash.",
+          "approach": "Designed APIs, integrations, middleware, and cloud migration work using Java/Spring, Python, PHP, Kubernetes, Oracle, MySQL, RHEL, and Bash.",
       "outcome": "Supported charging-system upgrades, prepaid fixed services, USSD integration, application modernization, and microservice adoption.",
       "skills": [
         "System integration",
         "Modernization",
-        "Cloudification",
+        "Cloud migration",
         "Telecom"
       ]
     },
@@ -346,7 +352,7 @@
     {
       "name": "Internal Auditor of Management Systems",
       "issuer": "T-CERT SYSTEM Academy",
-      "note": "ISO 9001:2015 and ISO/IEC 27001:2022 according to ISO 19011:2018 · Apr 2026 · TC-0063-26MK-0657",
+      "note": "Certified in internal auditing for ISO 9001:2015 and ISO/IEC 27001:2022 in accordance with ISO 19011:2018 · Apr 2026 · TC-0063-26MK-0657",
       "url": "assets/documents/iso-27001-internal-auditor-certificate.pdf"
     }
   ],
