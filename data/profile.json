@@ -24,12 +24,13 @@
     "teams": "https://teams.microsoft.com/l/chat/0/0?users=gthejawansha2%40outlook.com",
     "whatsapp": "https://wa.me/94777333837"
   },
-  "summary": "Lead Software Engineer and Information Security Manager with more than seven years of experience designing, modernizing, and securing commerce, advertising technology, and telecommunications platforms. Combines hands-on backend, data, and infrastructure engineering with technical leadership, delivery ownership, and ISO/IEC 27001:2022-aligned security governance across cloud and bare-metal environments.",
+  "summary": "Technical Lead and Information Security Manager with more than seven years of experience leading the architecture, delivery, modernisation, and security of commerce, advertising technology, and telecommunications platforms. Combines hands-on backend, data, and infrastructure engineering with technical strategy, engineering mentoring, delivery ownership, cross-functional decision-making, and ISO/IEC 27001:2022-aligned security governance across cloud and bare-metal environments.",
   "cvHighlights": [
-    "Increased merchant catalogue ingestion throughput by 5× and reduced feed processing latency by 70% across commerce and advertising technology platforms.",
+    "Led technical strategy, architecture, and engineering delivery across commerce, advertising technology, reporting, and partner-integration platforms.",
+    "Increased merchant catalogue ingestion throughput by 5× and reduced feed processing latency by 70%.",
     "Identified and remediated more than 17 critical infrastructure risks while establishing ISO/IEC 27001:2022-aligned security governance and technical controls.",
-    "Led telecom charging modernization across Online Charging System upgrades, prepaid fixed-line services, USSD integration, and microservices-based platforms.",
-    "Strengthened delivery through architecture leadership, code reviews, engineering mentoring, CI/CD, observability, and cross-functional technical decision-making."
+    "Led telecommunications charging modernisation across Online Charging System upgrades, prepaid fixed-line services, USSD integration, and microservices-based platforms.",
+    "Strengthened engineering delivery through architecture leadership, technical decision-making, code reviews, mentoring, CI/CD, observability, and cross-functional collaboration."
   ],
   "heroSummary": "An engineer at heart and hands-on technical leader connecting platform architecture, reliable delivery, and ISO/IEC 27001:2022-aligned security.",
   "about": [
@@ -38,16 +39,18 @@
   ],
   "capabilities": [
     {
-      "title": "Architecture & leadership",
+      "title": "Technical leadership & architecture",
       "description": "System design, technical roadmaps, delivery planning, code review, mentoring, cross-functional alignment, and reliability.",
       "skills": [
-        "System architecture",
         "technical leadership",
+        "system architecture",
+        "engineering delivery",
+        "technical strategy",
+        "engineering mentoring",
         "API design",
         "data pipelines",
-        "engineering mentoring",
         "Agile delivery",
-        "technical decision-making",
+        "cross-functional decision-making",
         "observability"
       ]
     },
@@ -115,7 +118,7 @@
         {
           "title": "Information Security Manager",
           "period": "Oct 2025 – Present",
-          "summary": "Owns the strategic development and operation of the information security management system while continuing to support engineering leadership, including the identification and remediation of more than 17 critical infrastructure risks.",
+          "summary": "Owns the strategic development and operation of the information security management system while continuing to provide technical leadership across engineering, infrastructure, risk management, and security governance.",
           "bullets": [
             "Leads the design and operation of an ISO/IEC 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal audit coordination, and management reporting.",
             "Established a structured risk assessment and treatment register that translates technical findings into prioritized controls, accountable owners, and measurable remediation actions.",
@@ -134,16 +137,16 @@
           ]
         },
         {
-          "title": "Lead Software Engineer / Technical Lead",
+          "title": "Technical Lead / Lead Software Engineer",
           "period": "Feb 2023 – Present",
-          "summary": "Leads architecture and delivery for commerce and advertising technology services, increasing merchant catalogue ingestion throughput by 5× and reducing feed processing latency by 70% across onboarding, reporting, and partner integrations.",
+          "summary": "Leads technical strategy, architecture, and engineering delivery for commerce and advertising technology services, increasing merchant catalogue ingestion throughput by 5× and reducing feed processing latency by 70% across onboarding, reporting, and partner integrations.",
           "bullets": [
-            "Directs architecture and implementation for merchant catalogue ingestion, reporting services, and Google and Microsoft Shopping integrations.",
-            "Builds backend services and data workflows with PHP/Symfony, Python, JavaScript, PostgreSQL, and Redis across Docker and Kubernetes environments.",
+            "Defines technical direction and leads architecture and implementation across merchant catalogue ingestion, reporting services, and Google and Microsoft Shopping integrations.",
+            "Leads sprint planning, technical decision-making, code reviews, engineering mentoring, and collaboration with product and commercial stakeholders.",
+            "Designs and oversees backend services and data workflows using PHP, Symfony, Python, JavaScript, PostgreSQL, and Redis across Docker and Kubernetes environments.",
             "Introduced and enhanced GitHub Actions CI/CD pipelines, structured logging, metrics, and tracing practices to enable faster and safer production changes.",
             "Diagnosed and resolved recurring Nginx and PHP-FPM container stability issues through profiling, configuration tuning, service hardening, and operational automation.",
-            "Developed data pipelines for campaign clicks, advertising costs, conversions, and revenue signals used by internal CPC optimization systems.",
-            "Leads sprint planning, code reviews, technical decision-making, and engineering mentoring while collaborating with product and commercial stakeholders."
+            "Developed data pipelines for campaign clicks, advertising costs, conversions, and revenue signals used by internal CPC optimisation systems."
           ],
           "technologies": [
             "PHP",

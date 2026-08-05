@@ -509,6 +509,11 @@ const common = {
   github: escapeAttribute(profile.links.github),
   summary: escapeHtml(profile.summary),
   heroSummary: escapeHtml(profile.heroSummary),
+  cvHeadline: escapeHtml("Technical Lead & Information Security Manager"),
+  cvTitle: escapeHtml(`${profile.name} — Technical Lead CV`),
+  cvDescription: escapeAttribute(
+    `ATS-friendly CV for ${profile.name}, Technical Lead, Lead Software Engineer, and Information Security Manager.`
+  ),
   siteTitle: escapeHtml(profile.site.title),
   siteDescription: escapeAttribute(profile.site.description),
   siteUrl: escapeAttribute(profile.site.url),
