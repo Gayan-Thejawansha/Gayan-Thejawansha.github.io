@@ -235,6 +235,19 @@ a {
   margin-bottom: 0.025in;
 }
 
+.cv-highlights {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.06in 0.25in;
+  padding-left: 0.18in;
+  margin: 0;
+}
+
+.cv-highlights li {
+  break-inside: avoid;
+  margin: 0;
+}
+
 .cv-stack {
   margin: 0.05in 0 0;
   color: var(--muted);

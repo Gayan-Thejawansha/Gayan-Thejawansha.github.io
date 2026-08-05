@@ -1,0 +1,19 @@
+{
+  "skip": [
+    "gayan-thejawansha.github.io",
+    "github.com",
+    "linkedin.com",
+    "delupe.net",
+    "www.cs.umd.edu",
+    "teams.microsoft.com",
+    "wa.me",
+    "dialog.lk",
+    "facebook.com",
+    "instagram.com",
+    "pdn.ac.lk",
+    "virtusa.com",
+    "schema.org",
+    "mailto:.*",
+    "tel:.*"
+  ]
+}

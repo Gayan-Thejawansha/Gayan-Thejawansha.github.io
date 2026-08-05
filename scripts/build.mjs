@@ -398,6 +398,11 @@ const renderCvSkills = () =>
     )
     .join("");
 
+const renderCvHighlights = () =>
+  `<ul class="cv-highlights">${profile.cvHighlights
+    .map((highlight) => `<li>${escapeHtml(highlight)}</li>`)
+    .join("")}</ul>`;
+
 const renderCvExperience = () =>
   profile.experience
     .map(
@@ -426,17 +431,6 @@ const renderCvExperience = () =>
                 </section>`
             )
             .join("")}
-        </article>`
-    )
-    .join("");
-
-const renderCvProjects = () =>
-  profile.caseStudies
-    .map(
-      (study) => `
-        <article class="cv-project">
-          <h3>${escapeHtml(study.title)} <span>— ${escapeHtml(study.context)}</span></h3>
-          <p>${escapeHtml(study.approach)} ${escapeHtml(study.outcome)}</p>
         </article>`
     )
     .join("");
@@ -552,7 +546,7 @@ const cvHtml = replaceTokens(cvTemplate, {
   cvContact: renderCvContact(),
   cvSkills: renderCvSkills(),
   cvExperience: renderCvExperience(),
-  cvProjects: renderCvProjects(),
+  cvHighlights: renderCvHighlights(),
   cvCertifications: renderCvCertifications(),
   cvEducation: renderCvEducation()
 });
