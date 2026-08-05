@@ -27,7 +27,10 @@ const requiredFiles = [
   "assets/img/phone.png",
   "assets/img/WhatsApp.svg",
   "3fbba454464e4fe7b57110f5f0757755.txt",
-  "assets/documents/iso-27001-internal-auditor-certificate.pdf"
+  "assets/documents/iso-27001-internal-auditor-certificate.pdf",
+  "assets/documents/Degree Certificate - Redacted.pdf",
+  "assets/documents/Transcript - Redacted.pdf",
+  "assets/documents/Advance Level Certificate - Redacted.pdf"
 ];
 
 const failures = [];
@@ -86,12 +89,14 @@ const forbiddenArtifactPatterns = [
 ];
 
 for (const file of walk(dist)) {
-  const path = relative(dist, file);
+  const path = relative(dist, file).replaceAll("\\", "/");
   if (forbiddenArtifactPatterns.some((pattern) => pattern.test(path))) {
     failures.push(`Forbidden file in public artifact: ${path}`);
   }
-  if (statSync(file).size > 1_500_000) {
-    failures.push(`Public asset exceeds 1.5 MB: ${path}`);
+  // Credential scans are linked on demand and are allowed a larger per-file budget.
+  const maxSize = path.startsWith("assets/documents/") ? 6_000_000 : 1_500_000;
+  if (statSync(file).size > maxSize) {
+    failures.push(`Public asset exceeds ${maxSize / 1_000_000} MB: ${path}`);
   }
 }
 
