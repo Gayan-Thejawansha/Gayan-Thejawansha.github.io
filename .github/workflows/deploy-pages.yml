@@ -33,19 +33,36 @@ jobs:
       - name: Install validation dependencies
         run: npm ci --ignore-scripts
 
-      - name: Build and validate static content
-        run: npm test
+      - name: Generate CV HTML
+        run: npm run build
 
       - name: Generate text-based CV PDF
         run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory "$GITHUB_WORKSPACE" >/tmp/cv-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          server_ready=false
+          for attempt in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:4173/cv.html >/dev/null; then
+              server_ready=true
+              break
+            fi
+            sleep 1
+          done
+          if [ "$server_ready" != true ]; then
+            cat /tmp/cv-server.log
+            exit 1
+          fi
           google-chrome \
             --headless=new \
             --no-sandbox \
             --disable-gpu \
             --no-pdf-header-footer \
             --print-to-pdf="$GITHUB_WORKSPACE/assets/documents/Gayan_Thejawansha_CV.pdf" \
-            "file://$GITHUB_WORKSPACE/cv.html"
-          npm run build
+            http://127.0.0.1:4173/cv.html
+
+      - name: Build and validate static content
+        run: npm test
 
       - name: Verify CV text extraction
         run: |
