@@ -24,14 +24,14 @@
     "teams": "https://teams.microsoft.com/l/chat/0/0?users=gthejawansha2%40outlook.com",
     "whatsapp": "https://wa.me/94777333837"
   },
-  "summary": "Lead Software Engineer and Information Security Manager with 7+ years of full-time experience designing, modernizing, and securing commerce, ad-tech, and telecom platforms. Combines hands-on backend and infrastructure engineering with technical leadership, delivery ownership, and ISO 27001-aligned security governance across cloud and bare-metal environments.",
+  "summary": "Lead Software Engineer and Information Security Manager with more than seven years of experience designing, modernizing, and securing commerce, advertising technology, and telecommunications platforms. Combines hands-on backend, data, and infrastructure engineering with technical leadership, delivery ownership, and ISO/IEC 27001:2022-aligned security governance across cloud and bare-metal environments.",
   "cvHighlights": [
-    "Increased merchant catalogue ingestion throughput 5x and reduced feed processing latency 70% across commerce and ad-tech platforms.",
-    "Identified and remediated 17+ critical infrastructure risks while establishing ISO 27001:2022-aligned security governance and technical controls.",
-    "Led telecom charging modernization across Online Charging System upgrades, prepaid fixed services, USSD integration, and microservice platforms.",
-    "Strengthened delivery through architecture leadership, code review, mentoring, CI/CD, observability, and cross-functional technical decision-making."
+    "Increased merchant catalogue ingestion throughput by 5× and reduced feed processing latency by 70% across commerce and advertising technology platforms.",
+    "Identified and remediated more than 17 critical infrastructure risks while establishing ISO/IEC 27001:2022-aligned security governance and technical controls.",
+    "Led telecom charging modernization across Online Charging System upgrades, prepaid fixed-line services, USSD integration, and microservices-based platforms.",
+    "Strengthened delivery through architecture leadership, code reviews, engineering mentoring, CI/CD, observability, and cross-functional technical decision-making."
   ],
-  "heroSummary": "An engineer at heart and hands-on technical leader connecting platform architecture, reliable delivery, and ISO 27001-aligned security.",
+  "heroSummary": "An engineer at heart and hands-on technical leader connecting platform architecture, reliable delivery, and ISO/IEC 27001:2022-aligned security.",
   "about": [
     "I work where software architecture, operational reliability, and information security meet. My background spans telecom charging systems, high-volume merchant data and reporting platforms, API integrations, containerized infrastructure, and security-management systems.",
     "An engineer at heart, I stay close to implementation while leading technical direction: shaping architecture, reviewing code, improving delivery systems, mentoring engineers, translating risk into practical controls, and partnering with product and business stakeholders."
@@ -42,12 +42,13 @@
       "description": "System design, technical roadmaps, delivery planning, code review, mentoring, cross-functional alignment, and reliability.",
       "skills": [
         "System architecture",
-        "Technical leadership",
+        "technical leadership",
         "API design",
-        "Data pipelines",
-        "Mentoring",
+        "data pipelines",
+        "engineering mentoring",
         "Agile delivery",
-        "Observability"
+        "technical decision-making",
+        "observability"
       ]
     },
     {
@@ -73,7 +74,7 @@
       "skills": [
         "Docker",
         "Kubernetes",
-        "Linux / RHEL",
+        "Linux, RHEL",
         "Bash",
         "Nginx",
         "PHP-FPM",
@@ -87,15 +88,16 @@
       "title": "Security & governance",
       "description": "Risk-led security management that connects governance requirements to enforceable technical controls.",
       "skills": [
-        "ISO 27001:2022",
+        "ISO/IEC 27001:2022",
         "ISMS",
-        "Risk assessment",
-        "Risk treatment",
-        "Internal audit",
-        "Access control",
-        "Data privacy",
-        "Infrastructure hardening",
-        "Vulnerability management"
+        "risk assessment",
+        "risk treatment",
+        "internal auditing",
+        "access control",
+        "data privacy",
+        "infrastructure hardening",
+        "vulnerability management",
+        "business continuity"
       ]
     }
   ],
@@ -113,16 +115,16 @@
         {
           "title": "Information Security Manager",
           "period": "Oct 2025 – Present",
-          "summary": "Owns the strategic development and operation of the information security management system alongside a continuing engineering leadership remit, including the identification and remediation of 17+ critical infrastructure risks.",
+          "summary": "Owns the strategic development and operation of the information security management system while continuing to support engineering leadership, including the identification and remediation of more than 17 critical infrastructure risks.",
           "bullets": [
-            "Leads the design and operation of an ISO 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal audit coordination, and management reporting.",
-            "Established a structured assessment and treatment register that translates technical findings into prioritized controls and accountable actions.",
-            "Automates and enforces security controls across Linux and Windows environments, focusing on access control, malware protection, encryption, privilege management, firewalling, and network auditing.",
-            "Connects engineering, governance, business continuity, data protection, and security awareness requirements across cloud and bare-metal infrastructure.",
+            "Leads the design and operation of an ISO/IEC 27001:2022-aligned ISMS, including organizational context, security objectives, risk treatment, internal audit coordination, and management reporting.",
+            "Established a structured risk assessment and treatment register that translates technical findings into prioritized controls, accountable owners, and measurable remediation actions.",
+            "Automates and enforces security controls across Linux and Windows environments, focusing on access control, malware protection, encryption, privilege management, firewall configuration, and network auditing.",
+            "Coordinates engineering, information security governance, business continuity, data protection, and security awareness requirements across cloud and bare-metal infrastructure.",
             "Developed server fleet energy monitoring and operational reporting to improve infrastructure efficiency and management visibility."
           ],
           "technologies": [
-            "ISO 27001:2022",
+            "ISO/IEC 27001:2022",
             "ISMS",
             "Risk management",
             "Linux",
@@ -132,16 +134,16 @@
           ]
         },
         {
-          "title": "Lead Software Engineer / Tech Lead",
+          "title": "Lead Software Engineer / Technical Lead",
           "period": "Feb 2023 – Present",
-          "summary": "Leads architecture and delivery for commerce and ad-tech services, increasing merchant catalogue ingestion throughput 5x and reducing feed processing latency 70% across onboarding, reporting, and partner integrations.",
+          "summary": "Leads architecture and delivery for commerce and advertising technology services, increasing merchant catalogue ingestion throughput by 5× and reducing feed processing latency by 70% across onboarding, reporting, and partner integrations.",
           "bullets": [
             "Directs architecture and implementation for merchant catalogue ingestion, reporting services, and Google and Microsoft Shopping integrations.",
             "Builds backend services and data workflows with PHP/Symfony, Python, JavaScript, PostgreSQL, and Redis across Docker and Kubernetes environments.",
-            "Introduced and improved GitHub Actions delivery pipelines plus logging, metrics, and tracing practices for faster and safer production changes.",
+            "Introduced and enhanced GitHub Actions CI/CD pipelines, structured logging, metrics, and tracing practices to enable faster and safer production changes.",
             "Diagnosed and resolved recurring Nginx and PHP-FPM container stability issues through profiling, configuration tuning, service hardening, and operational automation.",
-            "Developed data pipelines for campaign clicks, cost, conversion, and revenue signals used by in-house CPC optimization work.",
-            "Leads sprint planning, code review, technical decision-making, and mentoring while partnering with product and commercial stakeholders."
+            "Developed data pipelines for campaign clicks, advertising costs, conversions, and revenue signals used by internal CPC optimization systems.",
+            "Leads sprint planning, code reviews, technical decision-making, and engineering mentoring while collaborating with product and commercial stakeholders."
           ],
           "technologies": [
             "PHP",
@@ -176,8 +178,8 @@
           "bullets": [
             "Designed technical solutions for system integration, middleware, security, and continuous service requirements across charging projects.",
             "Developed and supported backend services with Java/Spring Boot, Python, PHP, JavaScript, MySQL, and Oracle Database in AWS, Kubernetes, and RHEL environments.",
-            "Contributed to application modernization, digitization, and cloud migration initiatives for prepaid loan and microservice platforms.",
-            "Converted stakeholder requirements and production insight into architecture decisions, roadmaps, and improvement plans."
+            "Contributed to application modernization, digital transformation, cloud migration, and microservices adoption for prepaid lending and charging platforms.",
+            "Translated stakeholder requirements and production insights into architecture decisions, technical roadmaps, and service improvement plans."
           ],
           "technologies": [
             "Java",
@@ -198,8 +200,8 @@
           "summary": "Delivered backend services, integrations, and modernization work for telecom charging and prepaid platforms.",
           "bullets": [
             "Designed technical solutions using system performance, utilization, capacity, integrity, and technology roadmap requirements.",
-            "Contributed to an Online Charging System upgrade, supplementary application upgrades, and a USSD gateway for fixed connections.",
-            "Developed APIs supporting prepaid fixed connection services and contributed to application modernization and digitization.",
+            "Contributed to an Online Charging System upgrade, supplementary application upgrades, and the implementation of a USSD gateway for fixed-line connections.",
+            "Developed APIs supporting prepaid fixed-line services and contributed to application modernization and digital transformation.",
             "Built and operated Java, Spring, Python, PHP, MySQL, and Oracle services in Kubernetes and RHEL environments."
           ],
           "technologies": [
@@ -218,7 +220,7 @@
       ]
     },
     {
-      "company": "Virtusa Pvt. Ltd",
+      "company": "Virtusa Pvt. Ltd.",
       "companyUrl": "https://www.virtusa.com/",
       "logo": "assets/img/virtusa.png",
       "logoAlt": "Virtusa",
@@ -230,9 +232,9 @@
         {
           "title": "Software Engineering Trainee",
           "period": "Nov 2017 – Mar 2018",
-          "summary": "Worked with an R&D team on internal governance platform interfaces, Java processes, automation, and data changes.",
+          "summary": "Worked with an R&D team on internal governance platform interfaces, Java backend processes, workflow automation, and database changes.",
           "bullets": [
-            "Supported the Global Technology Office governance platform through interface work, Java backend processes, and database changes.",
+            "Supported the Global Technology Office governance platform through interface development, Java backend processes, and database modifications.",
             "Automated weekly and monthly workflows spanning frontend and backend processes.",
             "Worked with Java, MySQL, OrientDB, and system automation tooling in a collaborative R&D environment."
           ],
@@ -253,7 +255,7 @@
       "context": "Commerce & ad-tech",
       "challenge": "Scale merchant onboarding, catalogue ingestion, partner feeds, and campaign reporting while maintaining reliable operations.",
       "approach": "Led service and data-flow design across PHP/Symfony, PostgreSQL, Redis, Docker/Kubernetes, partner APIs, CI/CD, and observability.",
-      "outcome": "Increased merchant catalogue throughput 5x and reduced feed processing latency 70%, while improving release safety and production visibility.",
+      "outcome": "Increased merchant catalogue throughput by 5× and reduced feed processing latency by 70%, while improving release safety and production visibility.",
       "skills": [
         "Architecture",
         "Data pipelines",
@@ -280,7 +282,7 @@
       "title": "Security governance to technical controls",
       "context": "Information security",
       "challenge": "Establish risk-led governance for infrastructure and merchant data without separating policy from engineering reality.",
-      "approach": "Built an ISO 27001-aligned risk and treatment process, coordinated audit activity, and automated controls across Linux, Windows, cloud, and bare-metal systems.",
+      "approach": "Built an ISO/IEC 27001:2022-aligned risk and treatment process, coordinated audit activity, and automated controls across Linux, Windows, cloud, and bare-metal systems.",
       "outcome": "Identified and remediated 17+ critical infrastructure risks while establishing accountable treatment, stronger technical enforcement, and management-ready reporting.",
       "skills": [
         "ISMS",
@@ -352,7 +354,9 @@
     {
       "name": "Internal Auditor of Management Systems",
       "issuer": "T-CERT SYSTEM Academy",
-      "note": "Certified in internal auditing for ISO 9001:2015 and ISO/IEC 27001:2022 in accordance with ISO 19011:2018 · Apr 2026 · TC-0063-26MK-0657",
+      "date": "April 2026",
+      "note": "Internal auditing of ISO 9001:2015 and ISO/IEC 27001:2022 management systems in accordance with ISO 19011:2018",
+      "certificateNumber": "TC-0063-26MK-0657",
       "url": "assets/documents/iso-27001-internal-auditor-certificate.pdf"
     }
   ],

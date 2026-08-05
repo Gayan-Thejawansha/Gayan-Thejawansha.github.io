@@ -229,8 +229,9 @@ const renderCertifications = () =>
           </div>
           <p class="credential-label">Professional credential</p>
           <h3>${escapeHtml(certification.name)}</h3>
-          <p>${escapeHtml(certification.issuer)}</p>
+          <p>${escapeHtml(certification.issuer)} · ${escapeHtml(certification.date)}</p>
           <p class="credential-note">${escapeHtml(certification.note)}</p>
+          <p class="credential-note">Certificate No. ${escapeHtml(certification.certificateNumber)}</p>
           <a class="text-link" href="${escapeAttribute(certification.url)}">
             View credential <span aria-hidden="true">↗</span>
           </a>
@@ -441,7 +442,9 @@ const renderCvCertifications = () =>
       (certification) => `
         <article class="cv-simple-item">
           <h3>${escapeHtml(certification.name)}</h3>
-          <p>${escapeHtml(certification.issuer)}. ${escapeHtml(certification.note)}</p>
+          <p>${escapeHtml(certification.issuer)} · ${escapeHtml(certification.date)}</p>
+          <p>${escapeHtml(certification.note)}</p>
+          <p>Certificate No. ${escapeHtml(certification.certificateNumber)}</p>
         </article>`
     )
     .join("");
