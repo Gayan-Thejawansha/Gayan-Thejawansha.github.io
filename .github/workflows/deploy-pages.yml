@@ -70,11 +70,18 @@ jobs:
             sudo apt-get update
             sudo apt-get install --yes poppler-utils
           fi
-          pdftotext assets/documents/Gayan_Thejawansha_CV.pdf cv-text.txt
-          grep --fixed-strings "Gayan Shanaka Thejawansha" cv-text.txt
-          grep --fixed-strings "Professional Experience" cv-text.txt
-          grep --fixed-strings "Delupe A/S" cv-text.txt
-          grep --fixed-strings "Dialog Axiata PLC" cv-text.txt
+          pdftotext -layout assets/documents/Gayan_Thejawansha_CV.pdf cv-text.txt
+          tr '\n' ' ' < cv-text.txt | tr -s '[:space:]' ' ' > cv-text-normalized.txt
+          for phrase in \
+            "Gayan Shanaka Thejawansha" \
+            "Professional Experience" \
+            "Delupe A/S" \
+            "Dialog Axiata PLC"; do
+            if ! grep --fixed-strings --ignore-case --quiet "$phrase" cv-text-normalized.txt; then
+              echo "Missing required CV text: $phrase"
+              exit 1
+            fi
+          done
 
       - name: Audit development dependencies
         run: npm audit
